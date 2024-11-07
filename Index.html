@@ -7,34 +7,138 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style>
         .girisCarousel{
-            height: 400px;
+            height: 350px;
+
 
         }
+        .d-flex{
+            height:30px;
+
+        }
+        .custom-search-btn{
+            background-color: hotpink;
+            color: white;
+            border: none;
+
+        }
+        .custom-search-btn:hover {
+            background-color: black;
+            color:white;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            justify-items: center;
+            padding: 20px;
+            gap: 70px;
+        }
+
+        .custom-card {
+            width: 100%;
+            max-width: 320px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .custom-card .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .custom-card .card-body {
+            padding: 15px;
+        }
+
+        .custom-card .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .custom-card .card-text {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .custom-card .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+        }
+
+        .custom-card .btn:hover {
+            background-color: #0056b3;
+        }
+
+
+
 
     </style>
 </head>
 <body>
 <div name="navbar" id="navbar" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <div class="container-fluid px-5 ">
+            <a class="navbar-brand" href="#">SEPHORA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav flex-grow-1 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">En Yeniler</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link active" aria-current="page" href="#">Trendler</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link active" aria-current="page" href="#">Makyaj</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link active" aria-current="page" href="#">Parfüm</a>
+
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Cilt Bakımı</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Vücut ve Banyo</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Saç</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sephora Collection</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Minis & More</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Markalar</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Kampanyalar</a>
+
+                    </li>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                        <button class="btn custom-search-btn" type="submit">Ara</button>
+                    </form>
                 </ul>
             </div>
         </div>
@@ -65,6 +169,25 @@
         </div>
     </div>
 </div>
+<div class="card-container">
+    <div class="custom-card">
+        <img src="images/esteeCard.jpg" class="card-img" alt="Card 1 Image">
+        <div class="card-body">
+            <h5 class="card-title">ESTEE LAUDER</h5>
+            <p class="card-text">2 ve Üzeri Ten Makyaj Alışverişine Çift Taraflı Makyaj Fırçası HEDİYE!</p>
+            <a href="#" class="btn btn-primary">Keşfet</a>
+        </div>
+    </div>
+    <div class="custom-card">
+        <img src="images/yslCard.jpg" class="card-img" alt="Card 2 Image">
+        <div class="card-body">
+            <h5 class="card-title">YVES SAİNT LAURENT</h5>
+            <p class="card-text"> Yeni YSL Make Me Blush Likit Allıklarını Keşfet!</p>
+            <a href="#" class="btn btn-primary">Keşfet</a>
+        </div>
+    </div>
+</div>
+
 
 </body>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" ></script>
