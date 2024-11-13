@@ -37,25 +37,30 @@
         .h2-text{
             position: relative;
             font-size: xx-large;
-            left: 150px;
-            margin-top: -20px;
-            padding: 90px;
         }
+        .card-tanitim{
+            max-width:35% ;
+            height: 215px;
+        }
+        .card-onecikan{
+            height: 500px;
+        }
+
     </style>
 </head>
 <body>
 <div name="navbar" id="navbar" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid px-5 ">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">SEPHORA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                <ul class="navbar-nav flex-grow-1 justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">En Yeniler</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                </li>
+                <ul class="navbar-nav"><li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">En Yeniler</a>
+                </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Trendler</a>
 
@@ -95,12 +100,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Kampanyalar</a>
 
-                    </li>
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Ara" aria-label="Search">
-                        <button class="btn custom-search-btn" type="submit">Ara</button>
-                    </form>
-                </ul>
+                    </li></ul>
             </div>
         </div>
     </nav>
@@ -131,9 +131,9 @@
     </div>
 
 
-    <div class="card-container">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
+    <div class="card-container row justify-content-center">
+        <div class="card mb-3 card-tanitim col-md-6" >
+            <div class="row g-0 ">
                 <div class="col-md-4">
                     <img src="images/sephora.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
@@ -149,8 +149,8 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
+        <div class="card mb-3 card-tanitim col-md-6" >
+            <div class="row g-0 ">
                 <div class="col-md-4">
                     <img src="images/yslCard.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
@@ -167,7 +167,7 @@
         </div>
     </div>
 
-    <div class="textt">
+    <div style="text-align:left;">
         <h2 class="h2-text"><b>SEPHORA'DA ÖNE ÇIKANLAR</b></h2>
     </div>
 
@@ -175,47 +175,49 @@
 
     <div class="row">
         <div class="col-md-3">
-            <div class="card">
-                <img src="images/fentygloss.jpeg" class="card-img-top" alt="Ürün Resmi">
-                <div class="card-body">
+            <div class="card card-onecikan">
+                <img src="images/fentygloss.jpeg" class="card-img-top" alt="Ürün Resmi" style="height: 300px">
+                <div class="card-body" style="height:50px;">
                     <h5 class="card-title">FENTY BEAUTY</h5>
                     <p class="card-text">Fenty Beauty Gloss Bomb</p>
                     <p class="card-price">1.299 TL</p>
-                    <a href="#" class="btn btn-primary">Sepete Ekle</a>
                 </div>
+                <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card">
-                <img src="images/rareallık.jpg" class="card-img-top" alt="Ürün Resmi">
-                <div class="card-body">
+            <div class="card card-onecikan">
+                <img src="images/rareallık.jpg" class="card-img-top" alt="Ürün Resmi" style="height: 300px">
+                <div class="card-body" style="height:50px;">
                     <h5 class="card-title">RARE BEAUTY</h5>
                     <p class="card-text">Rare Beauty Soft Pinch Likit Allık</p>
                     <p class="card-price">1.319 TL</p>
-                    <a href="#" class="btn btn-primary">Sepete Ekle</a>
+
                 </div>
+                <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card">
-                <img src="images/diorfoundation2.jpg" class="card-img-top" alt="Ürün Resmi">
-                <div class="card-body">
+            <div class="card card-onecikan">
+                <img src="images/diorfoundation2.jpg" class="card-img-top" alt="Ürün Resmi" style="height: 300px">
+                <div class="card-body " style="height:50px;">
                     <h5 class="card-title">DİOR</h5>
                     <p class="card-text">Dior Backstage Face & Body Foundation</p>
                     <p class="card-price">1.550 TL </p>
-                    <a href="#" class="btn btn-primary">Sepete Ekle</a>
+
                 </div>
+                <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card">
-                <img src="images/lancome.jpg" class="card-img-top" alt="Ürün Resmi">
-                <div class="card-body">
+            <div class="card card-onecikan">
+                <img src="images/lancome.jpg" class="card-img-top" alt="Ürün Resmi" style="height: 300px">
+                <div class="card-body" style="height:50px;">
                     <h5 class="card-title">LANCOME</h5>
                     <p class="card-text">Advanced Génifique Yeux Light Pearl - Göz Serumu</p>
                     <p class="card-price">3.600 TL</p>
-                    <a href="#" class="btn btn-primary">Sepete Ekle</a>
                 </div>
+                <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
             </div>
         </div>
     </div>
