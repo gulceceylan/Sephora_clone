@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SEPHORA</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -45,6 +45,22 @@
         .card-onecikan{
             height: 500px;
         }
+        .kesfet-btn {
+            border-radius: 25px;
+            background-color: #ffa4e2; ;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .kesfet-btn:hover {
+            background-color:#1a1930 ;
+            color: white;
+        }
+
+
 
     </style>
 </head>
@@ -100,10 +116,21 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Kampanyalar</a>
 
-                    </li></ul>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="node_modules/GirisYap.html">Giriş Yap</a>
+                    </li>
+                </ul>
             </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Ürün Ara" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="">Ara</button>
+            </form>
         </div>
     </nav>
+
 </div>
 <div class="container">
     <div name="girisCarouser" id="girisCarouser">
@@ -145,7 +172,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">KEŞFET!</a>
+                    <a href="#" class="btn kesfet-btn">KEŞFET!</a>
                 </div>
             </div>
         </div>
@@ -161,7 +188,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">KEŞFET!</a>
+                    <a href="#" class="btn kesfet-btn">KEŞFET!</a>
                 </div>
             </div>
         </div>
@@ -170,6 +197,7 @@
     <div style="text-align:left;">
         <h2 class="h2-text"><b>SEPHORA'DA ÖNE ÇIKANLAR</b></h2>
     </div>
+    <hr>
 
 
 
@@ -180,7 +208,7 @@
                 <div class="card-body" style="height:50px;">
                     <h5 class="card-title">FENTY BEAUTY</h5>
                     <p class="card-text">Fenty Beauty Gloss Bomb</p>
-                    <p class="card-price">1.299 TL</p>
+                    <p class="card-price" style="padding-top: 27px">1.299 TL</p>
                 </div>
                 <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
             </div>
@@ -191,7 +219,7 @@
                 <div class="card-body" style="height:50px;">
                     <h5 class="card-title">RARE BEAUTY</h5>
                     <p class="card-text">Rare Beauty Soft Pinch Likit Allık</p>
-                    <p class="card-price">1.319 TL</p>
+                    <p class="card-price" style="padding-top: 27px">1.319 TL</p>
 
                 </div>
                 <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
@@ -203,7 +231,7 @@
                 <div class="card-body " style="height:50px;">
                     <h5 class="card-title">DİOR</h5>
                     <p class="card-text">Dior Backstage Face & Body Foundation</p>
-                    <p class="card-price">1.550 TL </p>
+                    <p class="card-price" style="padding-top: 5px">1.550 TL </p>
 
                 </div>
                 <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
@@ -215,47 +243,49 @@
                 <div class="card-body" style="height:50px;">
                     <h5 class="card-title">LANCOME</h5>
                     <p class="card-text">Advanced Génifique Yeux Light Pearl - Göz Serumu</p>
-                    <p class="card-price">3.600 TL</p>
+                    <p class="card-price" style="padding-top: 5px">3.600 TL</p>
                 </div>
                 <div> <a href="#" class="btn btn-primary" style="margin-bottom: 5%; margin-left: 5%">Sepete Ekle</a></div>
             </div>
         </div>
     </div>
+    <hr>
     <div class="textt">
         <h2 class="h2-text"><b>100'den fazla marka Sephora'da</b></h2>
     </div>
-    <div class="row">
+    <hr>
+    <div class="row" >
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>ESTEE LAUDER</b></p>
                 </div>
-                <img src="images/ESTEE.jpg" class="card-img-top" alt="...">
+                <img src="images/ESTEE.jpg" class="card-img-top" alt="..." style="height: 290px">
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>GİVENCHY</b></p>
                 </div>
-                <img src="images/GİVENCHY.jpg" class="card-img-top" alt="...">
+                <img src="images/GİVENCHY.jpg" class="card-img-top" alt="..." style="height: 290px">
             </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>BENEFİT</b></p>
                 </div>
-                <img src="images/BENEFİT.jpg" class="card-img-top" alt="...">
+                <img src="images/BENEFİT.jpg" class="card-img-top" alt="..." style="height: 290px">
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>PRADA</b></p>
                 </div>
-                <img src="images/prada4.jpg" class="card-img-top" alt="...">
+                <img src="images/prada4.jpg" class="card-img-top" alt="..." style="height: 290px">
             </div>
         </div>
     </div>
