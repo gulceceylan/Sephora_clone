@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>SEPHORA</title>
@@ -257,7 +256,7 @@
     <hr>
     <div class="row" >
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="node_modules/SephoraESTEELAUDER.html" style="text-decoration: none; color: inherit;">
+            <a href="SephoraESTEELAUDER.html" style="text-decoration: none; color: inherit;">
             <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>ESTEE LAUDER</b></p>
@@ -267,7 +266,7 @@
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="node_modules/SephoraGIVENCHY.html" style="text-decoration: none; color: inherit;">
+            <a href="SephoraGIVENCHY.html" style="text-decoration: none; color: inherit;">
             <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>GİVENCHY</b></p>
@@ -278,7 +277,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="node_modules/SephoraBENEFIT.html" style="text-decoration: none; color: inherit;">
+            <a href="SephoraBENEFIT.html" style="text-decoration: none; color: inherit;">
             <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>BENEFİT</b></p>
@@ -288,7 +287,7 @@
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="node_modules/SephoraPRADA.html" style="text-decoration: none; color: inherit;">
+            <a href="SephoraPRADA.html" style="text-decoration: none; color: inherit;">
             <div class="card" name="card-marka" style="width: 18rem;">
                 <div class="card-body">
                     <p class="card-text"><b>PRADA</b></p>
@@ -300,10 +299,16 @@
     </div>
 
 </div>
-
-
-
-
+<marquee id="yazii" direction="left" style="font-size:xxx-large;color:red;">ŞAMPİYON</marquee>
+<button type="button" id="yazi" name="yazi" onclick="yaziDegis()">YAZI DEĞİŞ</button>
+<script>
+    function yaziDegis(){
+        let yazi = document.getElementById('yazii');
+        yazi.textContent = "GALATASARAY"
+        yazi.style.color = 'red';
+        yazi.style.backgroundColor = 'yellow';
+    }
+</script>
 
 <div class="pagination">
     <nav aria-label="Page navigation example">
