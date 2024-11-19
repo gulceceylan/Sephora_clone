@@ -299,14 +299,20 @@
     </div>
 
 </div>
-<marquee id="yazii" direction="left" style="font-size:xxx-large;color:red;">ŞAMPİYON</marquee>
+    <div id="yazibura">
+        
+    </div>
+<marquee id="yazii" direction="left" style="font-size:xxx-large;color:red;">EZZİK GALATASARAY</marquee>
 <button type="button" id="yazi" name="yazi" onclick="yaziDegis()">YAZI DEĞİŞ</button>
 <script>
     function yaziDegis(){
         let yazi = document.getElementById('yazii');
-        yazi.textContent = "GALATASARAY"
-        yazi.style.color = 'red';
+        yazi.textContent = "ŞAMPİYON FENERBAHÇE"
+        yazi.style.color = 'darkblue';
         yazi.style.backgroundColor = 'yellow';
+
+        let yaziburadiv = document.getElementById('yazibura'),
+            yaziburadiv.innerHTML = '<marquee id=yazii" direction="left" style="font-size:xxx-large;color:yellow; background-color:yellow;">EZZİK FETÖCÜ GALATASARAY YAŞA FENER</marquee>'
     }
 </script>
 
