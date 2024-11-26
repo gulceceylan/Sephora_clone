@@ -1,0 +1,54 @@
+#navv{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #ffa4e2;
+    z-index: 999;
+    display:flex;
+    align-items: center;
+}
+#navliste{
+    margin-left: 7rem;
+}
+#navliste ul {
+    display: flex; /* Liste öğelerini yan yana yerleştirir */
+    padding: 0; /* Varsayılan padding'i kaldırır */
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+    gap: 60px; /* Öğeler arasındaki boşluğu ayarlamak */
+
+}
+
+/* Liste öğelerine stil verme (isteğe bağlı) */
+#navliste li {
+    font-size: 18px; /* Yazı tipi boyutu */
+    display: flex;
+    margin-top: 10px;
+}
+#navliste .dropdown {
+    position: relative; /* Alt menü yerleştirileceği pozisyonu ayarlamak için */
+}
+
+/* Alt menü gizlenmiş olacak */
+#navliste .dropdown-menu {
+    display: none; /* Başlangıçta alt menü görünmez */
+    position: absolute; /* Alt menü, üst menünün altına konumlanır */
+    top: 100%; /* Üst öğenin hemen altında başlar */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Alt menüdeki öğelere stil verme */
+#navliste .dropdown-menu li {
+    padding: 5px 10px;
+    color: hotpink;
+
+}
+
+/* Dropdown menüsünü görünür yapma (hover ile) */
+#navliste .dropdown:hover .dropdown-menu {
+    display: block; /* Alt menü, öğe üzerine gelindiğinde görünür */
+}
